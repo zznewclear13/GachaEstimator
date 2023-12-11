@@ -1,0 +1,6 @@
+[submodule "external/fmt"]
+	path = external/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "external/nanothread"]
+	path = external/nanothread
+	url = https://github.com/mitsuba-renderer/nanothread.git
