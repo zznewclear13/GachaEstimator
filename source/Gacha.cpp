@@ -70,9 +70,9 @@ namespace Gacha
 			}
 		);
 
-		int totalSSRCount{ 0 };
-		int totalPityCount{ 0 };
-		int totalPulls{ 0 };
+		uint64_t totalSSRCount{ 0 };
+		uint64_t totalPityCount{ 0 };
+		uint64_t totalPulls{ 0 };
 		for (const auto& result : results)
 		{
 			totalSSRCount += result.m_SSRCount;
@@ -84,7 +84,7 @@ namespace Gacha
 		double averageProb{ totalSSR / totalPulls };
 		double pityProb{ totalPityCount / totalSSR };
 		double averagePulls{ totalPulls / totalSSR };
-		fmt::print("平均出货概率AverageProb: {:.2f}%, 平均出货保底概率PityProb: {:.2f}%, 平均出货抽数AveragePulls: {}\n",
+		fmt::print("骞冲潎鍑鸿揣姒傜巼AverageProb: {:.2f}%, 骞冲潎鍑鸿揣淇濆簳姒傜巼PityProb: {:.2f}%, 骞冲潎鍑鸿揣鎶芥暟AveragePulls: {}\n",
 					averageProb * 100.0, pityProb * 100.0, averagePulls);
 	}
 }
